@@ -10,7 +10,5 @@
 # Commands start here
 cd ${PBS_O_WORKDIR}
 module load singularity
-singularity exec
-/app/singularity/images/nscc/shchung/inc5654.img python
-linear.py
+singularity exec /app/singularity/images/nscc/shchung/inc5654.img python linear.py
 
