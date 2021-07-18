@@ -1,0 +1,352 @@
+                                                                                                                                                
+================
+== TensorFlow ==
+================
+
+NVIDIA Release 20.03-tf1 (build 11025831)
+TensorFlow Version 1.15.2
+
+Container image Copyright (c) 2019, NVIDIA CORPORATION.  All rights reserved.
+Copyright 2017-2019 The TensorFlow Authors.  All rights reserved.
+
+NVIDIA Deep Learning Profiler (dlprof) Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: Legacy NVIDIA Driver detected.  Compatibility mode ENABLED.
+
+NOTE: Detected MOFED driver 4.4-2.0.7; version automatically updated.
+
+NOTE: MOFED driver was detected, but nv_peer_mem driver was not detected.
+      Multi-node communication performance may be reduced.
+
+2021-07-18 20:34:34.309425: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2021-07-18 20:34:36.464327: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-07-18 20:34:36.877661: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:06:00.0
+2021-07-18 20:34:36.879130: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+2021-07-18 20:34:36.880640: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0a:00.0
+2021-07-18 20:34:36.882151: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0b:00.0
+2021-07-18 20:34:36.883599: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 4 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+2021-07-18 20:34:36.885095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 5 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+2021-07-18 20:34:36.886537: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 6 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+2021-07-18 20:34:36.887984: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 7 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+2021-07-18 20:34:36.888005: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2021-07-18 20:34:36.889946: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-07-18 20:34:36.892185: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-07-18 20:34:36.892618: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-07-18 20:34:36.894572: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-07-18 20:34:36.895399: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-07-18 20:34:36.899343: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-07-18 20:34:36.921950: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-07-18 20:34:36.956547: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2195105000 Hz
+2021-07-18 20:34:36.962582: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x50993a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-07-18 20:34:36.962601: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-07-18 20:34:38.310498: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x511e180 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-07-18 20:34:38.310533: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-07-18 20:34:38.310556: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-07-18 20:34:38.310561: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-07-18 20:34:38.310566: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (3): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-07-18 20:34:38.310571: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (4): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-07-18 20:34:38.310576: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (5): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-07-18 20:34:38.310581: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (6): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-07-18 20:34:38.310585: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (7): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-07-18 20:34:38.321011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:06:00.0
+2021-07-18 20:34:38.323695: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+2021-07-18 20:34:38.326338: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0a:00.0
+2021-07-18 20:34:38.328999: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0b:00.0
+2021-07-18 20:34:38.331671: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 4 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+2021-07-18 20:34:38.334337: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 5 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+2021-07-18 20:34:38.336981: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 6 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+2021-07-18 20:34:38.339674: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 7 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+2021-07-18 20:34:38.339702: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2021-07-18 20:34:38.339726: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-07-18 20:34:38.339752: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-07-18 20:34:38.339764: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-07-18 20:34:38.339777: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-07-18 20:34:38.339796: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-07-18 20:34:38.339809: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-07-18 20:34:38.366060: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-07-18 20:34:38.366097: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2021-07-18 20:34:41.051633: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-18 20:34:41.051702: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 1 2 3 4 5 6 7 
+2021-07-18 20:34:41.051710: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N Y Y Y Y N N N 
+2021-07-18 20:34:41.051715: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 1:   Y N Y Y N Y N N 
+2021-07-18 20:34:41.051720: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 2:   Y Y N Y N N Y N 
+2021-07-18 20:34:41.051724: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 3:   Y Y Y N N N N Y 
+2021-07-18 20:34:41.051729: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 4:   Y N N N N Y Y Y 
+2021-07-18 20:34:41.051734: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 5:   N Y N N Y N Y Y 
+2021-07-18 20:34:41.051739: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 6:   N N Y N Y Y N Y 
+2021-07-18 20:34:41.051743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 7:   N N N Y Y Y Y N 
+2021-07-18 20:34:41.065913: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14765 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.067909: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 14765 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.069799: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 14765 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0a:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.071471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 14765 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0b:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.073138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:4 with 14765 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.074785: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:5 with 14765 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-16GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.076576: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:6 with 14765 MB memory) -> physical GPU (device: 6, name: Tesla V100-SXM2-16GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.078254: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:7 with 14765 MB memory) -> physical GPU (device: 7, name: Tesla V100-SXM2-16GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.089560: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:06:00.0
+2021-07-18 20:34:41.090997: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+2021-07-18 20:34:41.092424: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0a:00.0
+2021-07-18 20:34:41.094068: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0b:00.0
+2021-07-18 20:34:41.095478: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 4 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+2021-07-18 20:34:41.096893: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 5 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+2021-07-18 20:34:41.098304: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 6 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+2021-07-18 20:34:41.099713: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 7 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+2021-07-18 20:34:41.099739: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2021-07-18 20:34:41.099761: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-07-18 20:34:41.099777: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-07-18 20:34:41.099789: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-07-18 20:34:41.099801: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-07-18 20:34:41.099819: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-07-18 20:34:41.099833: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-07-18 20:34:41.122639: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-07-18 20:34:41.123628: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-18 20:34:41.123639: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 1 2 3 4 5 6 7 
+2021-07-18 20:34:41.123644: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N Y Y Y Y N N N 
+2021-07-18 20:34:41.123649: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 1:   Y N Y Y N Y N N 
+2021-07-18 20:34:41.123654: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 2:   Y Y N Y N N Y N 
+2021-07-18 20:34:41.123658: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 3:   Y Y Y N N N N Y 
+2021-07-18 20:34:41.123663: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 4:   Y N N N N Y Y Y 
+2021-07-18 20:34:41.123667: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 5:   N Y N N Y N Y Y 
+2021-07-18 20:34:41.123672: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 6:   N N Y N Y Y N Y 
+2021-07-18 20:34:41.123676: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 7:   N N N Y Y Y Y N 
+2021-07-18 20:34:41.137060: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/device:GPU:0 with 14765 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.138493: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/device:GPU:1 with 14765 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.139918: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/device:GPU:2 with 14765 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0a:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.141350: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/device:GPU:3 with 14765 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0b:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.142786: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/device:GPU:4 with 14765 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.144213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/device:GPU:5 with 14765 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-16GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.145650: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/device:GPU:6 with 14765 MB memory) -> physical GPU (device: 6, name: Tesla V100-SXM2-16GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.147080: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/device:GPU:7 with 14765 MB memory) -> physical GPU (device: 7, name: Tesla V100-SXM2-16GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2021-07-18 20:34:41.447629: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:06:00.0
+2021-07-18 20:34:41.449045: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+2021-07-18 20:34:41.450471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0a:00.0
+2021-07-18 20:34:41.451867: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0b:00.0
+2021-07-18 20:34:41.453287: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 4 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+2021-07-18 20:34:41.454687: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 5 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+2021-07-18 20:34:41.456080: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 6 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+2021-07-18 20:34:41.457485: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 7 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+2021-07-18 20:34:41.457504: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2021-07-18 20:34:41.457518: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-07-18 20:34:41.457529: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-07-18 20:34:41.457539: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-07-18 20:34:41.457548: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-07-18 20:34:41.457559: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-07-18 20:34:41.457570: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-07-18 20:34:41.480355: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-07-18 20:34:41.481333: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-18 20:34:41.481344: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 1 2 3 4 5 6 7 
+2021-07-18 20:34:41.481349: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N Y Y Y Y N N N 
+2021-07-18 20:34:41.481354: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 1:   Y N Y Y N Y N N 
+2021-07-18 20:34:41.481359: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 2:   Y Y N Y N N Y N 
+2021-07-18 20:34:41.481363: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 3:   Y Y Y N N N N Y 
+2021-07-18 20:34:41.481368: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 4:   Y N N N N Y Y Y 
+2021-07-18 20:34:41.481373: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 5:   N Y N N Y N Y Y 
+2021-07-18 20:34:41.481377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 6:   N N Y N Y Y N Y 
+2021-07-18 20:34:41.481382: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 7:   N N N Y Y Y Y N 
+2021-07-18 20:34:41.494547: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14765 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.495971: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 14765 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.497395: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 14765 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0a:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.498813: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 14765 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0b:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.500228: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:4 with 14765 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.501653: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:5 with 14765 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-16GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.503076: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:6 with 14765 MB memory) -> physical GPU (device: 6, name: Tesla V100-SXM2-16GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+2021-07-18 20:34:41.504505: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:7 with 14765 MB memory) -> physical GPU (device: 7, name: Tesla V100-SXM2-16GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+2021-07-18 20:34:47.203674: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.203973: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.209213: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.209485: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.212434: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.212705: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.215642: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.215913: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.237215: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.237487: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.282940: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.283226: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.286224: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.286494: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.291678: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:47.291950: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:34:53.312519: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-07-18 20:34:55.076418: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+1.15.2
+Number of devices: 8
+Train on 60 steps
+Epoch 1/5
+ 1/60 [..............................] - ETA: 15:38 - loss: 2.3005 - acc: 0.0990 2/60 [>.............................] - ETA: 7:47 - loss: 2.2642 - acc: 0.1790  3/60 [>.............................] - ETA: 5:08 - loss: 2.2279 - acc: 0.2587 4/60 [=>............................] - ETA: 3:48 - loss: 2.1876 - acc: 0.3113 6/60 [==>...........................] - ETA: 2:27 - loss: 2.0968 - acc: 0.3782 8/60 [===>..........................] - ETA: 1:47 - loss: 1.9793 - acc: 0.430615/60 [======>.......................] - ETA: 49s - loss: 1.5949 - acc: 0.5129 22/60 [==========>...................] - ETA: 28s - loss: 1.3604 - acc: 0.567129/60 [=============>................] - ETA: 17s - loss: 1.2166 - acc: 0.606136/60 [=================>............] - ETA: 11s - loss: 1.1204 - acc: 0.633543/60 [====================>.........] - ETA: 6s - loss: 1.0398 - acc: 0.6554 50/60 [========================>.....] - ETA: 3s - loss: 0.9798 - acc: 0.672157/60 [===========================>..] - ETA: 0s - loss: 0.9299 - acc: 0.686660/60 [==============================] - 17s 281ms/step - loss: 0.9113 - acc: 0.6916
+Epoch 2/5
+ 1/60 [..............................] - ETA: 0s - loss: 0.5753 - acc: 0.7900 8/60 [===>..........................] - ETA: 0s - loss: 0.5431 - acc: 0.798015/60 [======>.......................] - ETA: 0s - loss: 0.5289 - acc: 0.804522/60 [==========>...................] - ETA: 0s - loss: 0.5294 - acc: 0.805529/60 [=============>................] - ETA: 0s - loss: 0.5217 - acc: 0.808236/60 [=================>............] - ETA: 0s - loss: 0.5128 - acc: 0.811743/60 [====================>.........] - ETA: 0s - loss: 0.5032 - acc: 0.816350/60 [========================>.....] - ETA: 0s - loss: 0.4952 - acc: 0.819657/60 [===========================>..] - ETA: 0s - loss: 0.4928 - acc: 0.820460/60 [==============================] - 0s 8ms/step - loss: 0.4905 - acc: 0.8213
+Epoch 3/5
+ 1/60 [..............................] - ETA: 0s - loss: 0.4750 - acc: 0.8220 8/60 [===>..........................] - ETA: 0s - loss: 0.4259 - acc: 0.846815/60 [======>.......................] - ETA: 0s - loss: 0.4313 - acc: 0.844522/60 [==========>...................] - ETA: 0s - loss: 0.4365 - acc: 0.842129/60 [=============>................] - ETA: 0s - loss: 0.4361 - acc: 0.843136/60 [=================>............] - ETA: 0s - loss: 0.4307 - acc: 0.845443/60 [====================>.........] - ETA: 0s - loss: 0.4262 - acc: 0.848150/60 [========================>.....] - ETA: 0s - loss: 0.4243 - acc: 0.849157/60 [===========================>..] - ETA: 0s - loss: 0.4233 - acc: 0.849860/60 [==============================] - 0s 8ms/step - loss: 0.4209 - acc: 0.8504
+Epoch 4/5
+ 1/60 [..............................] - ETA: 0s - loss: 0.4279 - acc: 0.8550 8/60 [===>..........................] - ETA: 0s - loss: 0.3901 - acc: 0.862015/60 [======>.......................] - ETA: 0s - loss: 0.3909 - acc: 0.862322/60 [==========>...................] - ETA: 0s - loss: 0.3926 - acc: 0.861029/60 [=============>................] - ETA: 0s - loss: 0.3853 - acc: 0.862636/60 [=================>............] - ETA: 0s - loss: 0.3843 - acc: 0.863743/60 [====================>.........] - ETA: 0s - loss: 0.3812 - acc: 0.864550/60 [========================>.....] - ETA: 0s - loss: 0.3834 - acc: 0.862957/60 [===========================>..] - ETA: 0s - loss: 0.3832 - acc: 0.862760/60 [==============================] - 0s 8ms/step - loss: 0.3829 - acc: 0.8631
+Epoch 5/5
+ 1/60 [..............................] - ETA: 0s - loss: 0.4224 - acc: 0.8550 9/60 [===>..........................] - ETA: 0s - loss: 0.3707 - acc: 0.866416/60 [=======>......................] - ETA: 0s - loss: 0.3658 - acc: 0.869823/60 [==========>...................] - ETA: 0s - loss: 0.3604 - acc: 0.871630/60 [==============>...............] - ETA: 0s - loss: 0.3560 - acc: 0.873337/60 [=================>............] - ETA: 0s - loss: 0.3589 - acc: 0.872244/60 [=====================>........] - ETA: 0s - loss: 0.3612 - acc: 0.870951/60 [========================>.....] - ETA: 0s - loss: 0.3578 - acc: 0.872658/60 [============================>.] - ETA: 0s - loss: 0.3561 - acc: 0.873460/60 [==============================] - 0s 7ms/step - loss: 0.3565 - acc: 0.8732
+2021-07-18 20:35:12.580086: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.580427: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.590392: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.590664: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.611342: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.611614: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.614387: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.614658: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.617765: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.618036: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.622215: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.622486: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.643616: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.643887: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.652082: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+	.  Registered:  device='CPU'
+
+2021-07-18 20:35:12.652362: W tensorflow/core/grappler/utils/graph_view.cc:830] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+	.  Registered:  device='CPU'
+
+ 1/10 [==>...........................] - ETA: 4s - loss: 0.3739 - acc: 0.870010/10 [==============================] - 1s 53ms/step - loss: 0.3786 - acc: 0.8639
+Test loss: 0.3785784482955933, Test accuracy: 86.39000058174133
+======================================================================================
+
+			Resource Usage on 2021-07-18 20:35:22.190518:
+
+	JobId: 5146465.wlm01  
+	Project: 11002070 
+	Exit Status: 0
+	NCPUs Requested: 40				NCPUs Used: 40
+							CPU Time Used: 00:00:00
+	Memory Requested: None 				Memory Used: 54444kb
+							Vmem Used: 1427344kb
+	Walltime requested: 00:25:00 			Walltime Used: 00:00:52
+	
+	Execution Nodes Used: (dgx4101:ncpus=40:ngpus=8)
+	
+ ======================================================================================
