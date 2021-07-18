@@ -1,4 +1,4 @@
-# Exercise 2 – fashion.py
+# Exercise 2
 import tensorflow as tf
 import keras
 fashion_mnist = keras.datasets.fashion_mnist
