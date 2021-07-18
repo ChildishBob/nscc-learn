@@ -29,7 +29,7 @@ with strategy.scope():
 
     # Compile and fit the model
     model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-model.fit(training_images, training_labels, epochs=5)
+model.fit(training_images, training_labels, epochs=5, batch_size=1000)
 # Test the model
-test_loss, test_accuracy = model.evaluate(test_images, test_labels, batch_size=20)
+test_loss, test_accuracy = model.evaluate(test_images, test_labels, batch_size=1000)
 print('Test loss: {}, Test accuracy: {}'.format(test_loss, test_accuracy*100))
